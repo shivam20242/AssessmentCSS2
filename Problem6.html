@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table styleing</title>
+    <style>
+    table tr td:first-child {
+    width:80%;
+    }
+    table tr:first-child{
+        color: black !important;
+        font-style: italic;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: rgb(196, 193, 193);
+    }
+    table tr td{
+        border-bottom: 1px solid grey;
+        border-right: 1px solid grey;
+    }
+    table tr:nth-child(4n+2) > td{
+        font-style: italic;
+        font-size: 30px;
+    }
+    table tr:nth-child(3n+1) > td{
+        font-size: bold;
+        color: green;
+    }
+    </style>
+</head>
+<body>
+    <table style="border: 1px solid black;">
+        <tr style="color: black !important;">
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>Product 1</td>
+            <td>1</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 2</td>
+            <td>2</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 3</td>
+            <td>3</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 4</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 5</td>
+            <td>5</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 6</td>
+            <td>6</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 7</td>
+            <td>7</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 8</td>
+            <td>8</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 9</td>
+            <td>9</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Product 10</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr style="background-color: yellow;">
+            <td colspan="2">Sum</td>
+            <td>$80</td>
+        </tr>
+    </table>
+</body>
+</html>
